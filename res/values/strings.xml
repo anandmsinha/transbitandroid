@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Falcon Testing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="content_hint">Content</string>
+    <string name="drawer_hint">Drawer</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+	<string name="ba_json_list">
+	    {
+			"GroupA": ["ChildA1", "Child A2", "Child A3"],
+			"GroupB": ["ChildB1", "Child B2"],
+			"GroupC": ["ChildC1"],
+			"GroupD": [],
+			"GroupE": ["ChildE1", "Child E2", "Child E3"]
+		}
+	</string>
+    
+</resources>
