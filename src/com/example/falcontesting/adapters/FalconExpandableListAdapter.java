@@ -31,7 +31,8 @@ public class FalconExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public int getChildrenCount(int groupPosition) {
 		try {
-			return this.menuGroupItems.get(this.groups.get(groupPosition)).size();
+			return this.menuGroupItems.get(this.groups.get(groupPosition))
+					.size();
 		} catch (Exception e) {
 			return 0;
 		}
@@ -45,7 +46,8 @@ public class FalconExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public Object getChild(int groupPosition, int childPosition) {
 		try {
-			return this.menuGroupItems.get(this.groups.get(groupPosition)).get(childPosition);
+			return this.menuGroupItems.get(this.groups.get(groupPosition)).get(
+					childPosition);
 		} catch (Exception e) {
 			return "Exception";
 		}
@@ -58,7 +60,7 @@ public class FalconExpandableListAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
-		return groupPosition*1024 + childPosition;
+		return groupPosition * 1024 + childPosition;
 	}
 
 	@Override
@@ -70,13 +72,13 @@ public class FalconExpandableListAdapter extends BaseExpandableListAdapter {
 	public View getGroupView(int groupPosition, boolean isExpanded,
 			View convertView, ViewGroup parent) {
 		if (convertView == null) {
-			if (getChildrenCount(groupPosition) != 0) {
-				convertView = layoutInflater.inflate(android.R.layout.simple_expandable_list_item_1, parent, false);
-			} else {
-				convertView = layoutInflater.inflate(android.R.layout.simple_selectable_list_item, parent, false);
-			}
+			int tmpLayoutElement = (getChildrenCount(groupPosition) == 0) ? android.R.layout.simple_selectable_list_item
+					: android.R.layout.simple_expandable_list_item_1;
+			convertView = layoutInflater.inflate(tmpLayoutElement, parent,
+					false);
 		}
-		TextView tmpTextView = (TextView) convertView.findViewById(android.R.id.text1);
+		TextView tmpTextView = (TextView) convertView
+				.findViewById(android.R.id.text1);
 		tmpTextView.setText(getGroup(groupPosition).toString());
 		return convertView;
 	}
@@ -85,9 +87,11 @@ public class FalconExpandableListAdapter extends BaseExpandableListAdapter {
 	public View getChildView(int groupPosition, int childPosition,
 			boolean isLastChild, View convertView, ViewGroup parent) {
 		if (convertView == null) {
-			convertView = layoutInflater.inflate(android.R.layout.simple_list_item_1, parent, false);
+			convertView = layoutInflater.inflate(
+					android.R.layout.simple_list_item_1, parent, false);
 		}
-		TextView tmpTextView = (TextView) convertView.findViewById(android.R.id.text1);
+		TextView tmpTextView = (TextView) convertView
+				.findViewById(android.R.id.text1);
 		tmpTextView.setText(getChild(groupPosition, childPosition).toString());
 		return convertView;
 	}

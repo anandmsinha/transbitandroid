@@ -2,7 +2,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.falcontesting.MainActivity" >
-
+	
+    <item
+        android:id="@+id/main_search"
+        android:title="@string/action_search"
+        android:showAsAction="ifRoom"
+        android:actionViewClass="android.widget.SearchView" />
+    
+    <item
+        android:id="@+id/main_add_button"
+        android:title="@string/add_request"
+        android:icon="@drawable/ic_action_content_add"
+        android:showAsAction="ifRoom" />
+    
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

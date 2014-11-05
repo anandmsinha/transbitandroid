@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">Falcon Testing</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">2227 [fbug] : Searcher - Ability to use FineReader SDK for extracting the text from images and use the text for solr indexing.</string>
+    <string name="add_request">Add Request</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
     <string name="action_settings">Settings</string>
     <string name="content_hint">Content</string>
     <string name="drawer_hint">Drawer</string>

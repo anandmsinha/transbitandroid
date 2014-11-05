@@ -12,20 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <TextView
-            android:id="@+id/view_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/content_hint" />
-        
-        <ExpandableListView 
-            android:id="@+id/main_sidebar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:choiceMode="singleChoice"
-            android:background="#fff" />
+        <ListView
+            android:id="@+id/main_list_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@xml/list_row_selector" />
+
+        <include layout="@layout/expandable_list_view"/>
     </android.support.v4.widget.DrawerLayout>
 
 </LinearLayout>
