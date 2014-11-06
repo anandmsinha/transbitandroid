@@ -52,9 +52,9 @@ public class MainActivity extends BaseActivity {
 				this.mRequestList, getLayoutInflater());
 		mListContent = (ListView) findViewById(R.id.main_list_content);
 		mListContent.setAdapter(mFalconRequestListAdapter);
-		
+
 		final MainActivity tmpThis = this;
-		
+
 		mListContent.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,

@@ -1,0 +1,5 @@
+1. A service call which would return ba groups and their ba in formatted way. Expected json is
+
+{
+	
+}

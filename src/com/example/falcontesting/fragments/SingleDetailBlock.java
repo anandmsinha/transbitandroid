@@ -5,7 +5,6 @@ import java.util.Map;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -16,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.falcontesting.R;
+import com.example.falcontesting.utility.UiBuilder;
 
 public class SingleDetailBlock extends Fragment {
 	
@@ -25,10 +25,7 @@ public class SingleDetailBlock extends Fragment {
 		View view = inflater.inflate(R.layout.single_detail_fragment, container, false);
 		LinearLayout mainLinearLayout = (LinearLayout) view.findViewById(R.id.single_detail_frag);
 		Activity tmpActivity = getActivity();
-		final TextView titleBlockTextView = new TextView(tmpActivity);
-		titleBlockTextView.setText("Properties");
-		titleBlockTextView.setTextSize(16);
-		titleBlockTextView.setTypeface(null, Typeface.BOLD);
+		final TextView titleBlockTextView = UiBuilder.createBoldTextView(tmpActivity, "Properties");
 		mainLinearLayout.addView(titleBlockTextView);
 		HashMap<String, String> testHashMap = new HashMap<String, String>();
 		testHashMap.put("Private", "True");
