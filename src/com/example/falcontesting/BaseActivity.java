@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import com.example.falcontesting.adapters.FalconExpandableListAdapter;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -153,6 +154,7 @@ public class BaseActivity extends ActionBarActivity implements
 		getSupportActionBar().setTitle(
 				this.expandableListAdapter.getChild(groupPosition,
 						childPosition).toString());
+		startActivity(new Intent(this, MainActivity.class));
 		return false;
 	}
 }
