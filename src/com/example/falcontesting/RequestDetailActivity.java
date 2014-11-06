@@ -14,8 +14,8 @@ public class RequestDetailActivity extends BaseActivity {
 	}
 
 	private void fetchDetails() {
-		if (getFragmentManager().findFragmentById(android.R.id.content) == null) {
-			getFragmentManager().beginTransaction().add(android.R.id.content, new SingleDetailBlock()).commit();
-		}
+		getFragmentManager().beginTransaction().add(R.id.main_details_view, new SingleDetailBlock()).commit();
+		getFragmentManager().beginTransaction().add(R.id.main_details_view, new SingleDetailBlock()).commit();
+		getFragmentManager().beginTransaction().add(R.id.main_details_view, new SingleDetailBlock()).commit();
 	}
 }
