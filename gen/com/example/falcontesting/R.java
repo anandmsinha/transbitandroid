@@ -1862,6 +1862,7 @@ containing a value of this type.
         public static final int ba_json_list=0x7f0b0019;
         public static final int content_hint=0x7f0b0015;
         public static final int drawer_hint=0x7f0b0016;
+        public static final int form_fields=0x7f0b001a;
         public static final int hello_world=0x7f0b0010;
         public static final int navigation_drawer_close=0x7f0b0018;
         public static final int navigation_drawer_open=0x7f0b0017;

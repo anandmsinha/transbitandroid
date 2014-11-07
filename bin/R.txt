@@ -490,6 +490,7 @@ int string app_name 0x7f0b000f
 int string ba_json_list 0x7f0b0019
 int string content_hint 0x7f0b0015
 int string drawer_hint 0x7f0b0016
+int string form_fields 0x7f0b001a
 int string hello_world 0x7f0b0010
 int string navigation_drawer_close 0x7f0b0018
 int string navigation_drawer_open 0x7f0b0017

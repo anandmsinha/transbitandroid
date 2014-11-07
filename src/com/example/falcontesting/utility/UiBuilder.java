@@ -47,5 +47,4 @@ public class UiBuilder {
 		button.setText(text);
 		return button;
 	}
-
 }

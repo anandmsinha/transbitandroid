@@ -20,6 +20,25 @@
 			"GroupE": ["ChildE1", "Child E2", "Child E3"]
 		}
 	</string>
+	<string name="form_fields">
+	    {
+		  "subject": {
+		    "type": "textField"
+		  },
+		  "logger": {
+		    "type": "spinnerField",
+		    "options": "anand__anant__rahul__random__yo"
+		  },
+		  "assigne": {
+		    "type": "spinnerField",
+		    "options": "anand__anant__rahul__random__yo"
+		  },
+		  "Attachements": {
+		    "type": "fileUploadField",
+		    "displayName": "Upload file"
+		  }
+		}
+	</string>
     <string-array name="planets_array">
         <item>Mercury</item>
         <item>Venus</item>
